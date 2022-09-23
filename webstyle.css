@@ -1,0 +1,50 @@
+body {
+    background-color: #eee;
+    color: #222;
+    transition: 300ms all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+.mode-control input {
+    position: absolute;
+    opacity: 0;
+}
+
+.mode-control span:nth-of-type(2) {
+    display: none;
+}
+
+.mode-control input:checked + span {
+    display : none ;
+}
+
+.mode-control input:checked + span + span {
+    display: inline-block;
+}
+
+/* ------------------------------------------ */
+.left_area h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color: #aa0000;
+}
+
+.mode-control {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #aa0000;
+}
